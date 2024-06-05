@@ -26,18 +26,18 @@ app.use('/noticias', noticiasRoutes)
 
 // app.listen(PORT, () => { console.log(`server listening on port ${PORT}`) })
 
-const options = {
-    key: fs.readFileSync('/home/galonso/scfg0cbqs'),
-    cert: fs.readFileSync('/home/galonso/scfg0cbqs'),
-    //ca: fs.readFileSync('/opt/psa/var/certificates/scfqdiDyQ') // si tienes un archivo CA bundle
-  };
+// const options = {
+//     key: fs.readFileSync('/home/galonso/scfg0cbqs'),
+//     cert: fs.readFileSync('/home/galonso/scfg0cbqs'),
+//     //ca: fs.readFileSync('/opt/psa/var/certificates/scfqdiDyQ') // si tienes un archivo CA bundle
+//   };
   
-  https.createServer(options, app).listen(PORT, () => {
-    console.log(`server listening on port ${PORT}`);
-  });
-  
-  
-//   app.listen(3000, () => {
-//     console.log(`server listening on port 3000`);
+//   https.createServer(options, app).listen(PORT, () => {
+//     console.log(`server listening on port ${PORT}`);
 //   });
+  
+  
+  app.listen(3000, () => {
+    console.log(`server listening on port 3000`);
+  });
   
